@@ -1,0 +1,8 @@
+.about-message-container > div{
+    margin-top: 0rem!important;
+}
+
+
+.about-message-container > div > p {
+    margin-top: 0.5rem;
+}

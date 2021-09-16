@@ -1,0 +1,81 @@
+
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    12.5%{
+        transform: translateX(-2px);
+    }
+    37.5%{
+        transform: translateX(2px);
+    }
+    62.5%{
+        transform: translateX(-2px);
+    }
+    87.5%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    }
+    
+.Shake{
+-webkit-animation: shake 400ms infinite;
+-moz-animation:  shake 400ms infinite;
+-o-animation: shake 400ms infinite;
+animation:  shake 400ms infinite;
+}
+
+.Rougit{
+fill: #ffd7d2;
+transition: all 3s linear;
+}
+
+.Rougit_2{
+fill: #ffbfb6;
+transition: all 3s linear;
+}
+
+.Rougit_3{
+fill: #fa8879;
+transition: all 3s linear;
+}
+
+.Rougit_3_nez{
+fill: #ff5e49;
+transition: all 3s linear;
+}
+
+.Rougit_3_cheveux{
+fill: #ff6f3d;
+transition: all 3s linear;
+}
+
+
+.st1{fill:rgb(0, 0, 0);}
+.st2{fill:#d60000;}
+.st3{fill:#f5c49f;}
+.st4{fill:#000000;}
+.st5{fill:#000000;}
+.st6{fill:#000000;}
+.st7{fill:#252323;}
+.st8{fill:#050505;}
+.st9{fill:#030303;}
+.st10{fill:#0e0d0d;}
+.st11{fill:#ffdac6;}
+.st12{fill:#ffffff;}
+.st13{display:none;fill:#000000;}
+.st14{fill:#000000;}
+.st15{fill:#030303;}
+
+.shirt1{fill:#d60000}
+.shirt2{fill:#2500cc}
+.shirt3{fill:#7bff00}
+.shirt4{fill:#fff45c}
+.shirt5{fill:#a806da}
+.shirt6{fill:#00f3f3}
+.shirt7{fill:#ec9d0b}
+.shirt8{fill:#008f8fcc}
+.shirt9{fill:#f800d7cc}
+.shirt10{fill:rgba(190, 171, 0, 0.911)}

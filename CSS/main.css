@@ -1,0 +1,20 @@
+main{
+    min-width: 486px;
+}
+
+.main-container{
+    padding:1rem;
+    padding-top: 5rem;
+    background-color: #c9c9c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    /* background: url(/Image/939716.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+

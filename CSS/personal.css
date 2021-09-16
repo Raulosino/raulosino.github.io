@@ -1,0 +1,56 @@
+.personal-container{
+    padding-top: 6rem;
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+
+/* 
+***********************************************************************************************************************
+LEFT CONTAINER
+***********************************************************************************************************************
+*/
+.personal-container > div:nth-child(1){
+    background:white;
+    padding-left: 1.5rem!important;
+    min-width: 400px
+}
+
+.languages{
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    margin-top: 2rem!important;
+    flex-direction: column;
+}
+
+.skills-container > .nes-badge {
+    margin-bottom: 1rem;
+}
+
+
+/* 
+***********************************************************************************************************************
+RIGHT CONTAINER
+***********************************************************************************************************************
+*/
+.personal-container > div:nth-child(2){
+    margin-left: 3rem;
+    background-color: white;
+    padding-left: 1.5rem!important;
+    min-width: 400px
+}
+
+.interest-container{
+    display: flex;
+    flex-direction: column;
+    margin-top:2rem!important;
+}
+
+.tech-container{
+    margin-bottom: 2rem;
+}
+
+
