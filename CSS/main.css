@@ -11,10 +11,10 @@ main{
     justify-content: center;
     flex-direction: column;
     display: flex;
-    /* background: url(/Image/939716.png) no-repeat center center fixed; 
+    background: url(/Image/939716.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; */
+    background-size: cover;
 }
 
