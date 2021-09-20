@@ -1,11 +1,12 @@
 header{
     width: 100%;
     padding: 2rem;
-    border-bottom: 4px solid black;
+    border: 0px solid black;
     min-width: 486px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0px!important;
 }
 
 .header-container{
