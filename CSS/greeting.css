@@ -15,8 +15,14 @@
 
 @media screen and (max-width:490px){
 
-    .messaeg-container > .nes-ballon {
+    #message-container{
+        max-width: 300px!important;
+        padding-top: 0.5rem!important;
+    }
+
+    #message-container > .nes-ballon {
         padding: 0.5rem 1rem!important;
+        
     }
 
     p {

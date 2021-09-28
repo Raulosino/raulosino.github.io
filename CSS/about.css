@@ -9,6 +9,11 @@
 
 
 @media screen and (max-width:460px){
+
+    .about-message-container{
+        max-width: 360px;
+    }
+
     .nes-cointainer > p {
         font-size: small;
     }
