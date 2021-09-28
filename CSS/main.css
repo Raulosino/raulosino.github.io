@@ -24,3 +24,13 @@ main{
    
     
 }
+
+
+@media screen and (max-width:460px){
+
+    .main-container{
+        padding-top: 4rem;
+        align-items: flex-start;
+    }
+
+}

@@ -13,7 +13,7 @@ LEFT CONTAINER
 .personal-container > div:nth-child(1){
     background:white;
     padding-left: 1.5rem!important;
-    min-width: 400px
+    /* min-width: 400px */
 }
 
 .languages{
@@ -40,7 +40,6 @@ RIGHT CONTAINER
     margin-left: 3rem;
     background-color: white;
     padding-left: 1.5rem!important;
-    min-width: 400px
 }
 
 .interest-container{
@@ -63,5 +62,17 @@ RIGHT CONTAINER
     .personal-container > div:nth-child(2){
         margin-top: 3rem;
         margin-left: 0rem;
+    }
+}
+
+
+@media screen and (max-width:460px){
+
+    .personal-container > div:nth-child(1){
+        max-width: 300px!important;
+    }
+
+    .personal-container > div:nth-child(2){
+        max-width: 300px!important;
     }
 }
