@@ -6,3 +6,10 @@
 .about-message-container > div > p {
     margin-top: 0.5rem;
 }
+
+
+@media screen and (max-width:460px){
+    .nes-cointainer > p {
+        font-size: small;
+    }
+}
