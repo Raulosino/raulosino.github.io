@@ -1,7 +1,7 @@
 .personal-container{
-    padding-top: 6rem;
+    margin-top: 6rem;
     display: flex;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 
 
@@ -54,3 +54,14 @@ RIGHT CONTAINER
 }
 
 
+
+@media screen and  (max-width:975px){
+    .personal-container{
+        flex-direction: column;
+    }
+
+    .personal-container > div:nth-child(2){
+        margin-top: 3rem;
+        margin-left: 0rem;
+    }
+}

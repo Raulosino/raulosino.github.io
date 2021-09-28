@@ -1,4 +1,20 @@
+
 .portofolio-container > div:nth-child(1){
     background-color: white;
+    padding-left: 1.5rem!important;
+    min-width: 848px;
 }
 
+.github-container {
+    display: flex;
+    margin-top: 2rem!important;
+    flex-direction: column;
+}
+
+@media screen and  (max-width:975px){
+
+    .portofolio-container > div:nth-child(1){
+        min-width: 400px;
+    }
+    
+}
