@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Fruity Weed — Startseite · Entwurf</title>
+  <link rel="stylesheet" href="assets/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="carousel.css">
+  <link rel="stylesheet" href="banner-carousel.css">
+  <link rel="stylesheet" href="shop-notice.css">
+  <link rel="stylesheet" href="about-story.css">
+  <link rel="stylesheet" href="category-carousel.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <a class="brand" href="./" aria-label="Fruity Weed Startseite">
+        <img src="assets/logo.png" alt="Fruity Weed" width="3516" height="606">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-menu"><span class="hamburger-icon" aria-hidden="true"><span></span><span></span><span></span></span></button>
+      <div class="main-menu" id="main-menu">
+        <a class="nav-link active" href="./" aria-current="page">Start</a>
+        <a class="nav-link" href="https://www.fruityweed.de/shop/">Shop</a>
+        <details class="nav-dropdown">
+          <summary class="nav-link">Infos</summary>
+          <div class="nav-dropdown-panel">
+            <span class="dropdown-heading">Service</span>
+            <a href="https://www.fruityweed.de/widerruf/">Widerruf</a>
+            <a href="https://www.fruityweed.de/zahlungsweisen/">Zahlungsweisen</a>
+            <a href="https://www.fruityweed.de/gpsr/">GPSR – Verantwortliche Person gemäß EU-Produktsicherheitsverordnung</a>
+            <a href="https://www.fruityweed.de/widerruf_fuer_digitale_inhalte/">Widerruf für digitale Inhalte</a>
+            <span class="dropdown-heading">Rechtliches</span>
+            <a href="https://www.fruityweed.de/datenschutz/">Datenschutz</a>
+            <a href="https://www.fruityweed.de/allgemeine_geschaeftsbedingungen/">Allgemeine Geschäftsbedingungen</a>
+            <a href="https://www.fruityweed.de/impressum/">Impressum</a>
+          </div>
+        </details>
+        <a class="nav-link" href="https://www.fruityweed.de/kategorie/allgemein/">Blog</a>
+        <a class="nav-link" href="https://www.fruityweed.de/mein-konto/">Mein Konto</a>
+        <a class="nav-link" href="https://www.fruityweed.de/vertrag-widerrufen/">Vertrag widerrufen</a>
+      </div>
+        <div class="nav-icons">
+          <a class="nav-icon" href="https://www.fruityweed.de/mein-konto/" aria-label="Anmelden / Mein Konto" title="Mein Konto">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg>
+          </a>
+          <details class="nav-dropdown search-dropdown">
+            <summary class="nav-icon" aria-label="Suche öffnen" title="Suche">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+            </summary>
+            <form class="nav-dropdown-panel search-panel" role="search" action="https://www.fruityweed.de/" method="get">
+              <label for="site-search">Suche</label>
+              <div class="search-fields">
+                <input id="site-search" type="search" name="s" placeholder="Suchbegriff …" required>
+                <button type="submit" aria-label="Suchen"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button>
+              </div>
+            </form>
+          </details>
+          <a class="nav-icon cart-icon" href="https://www.fruityweed.de/warenkorb/" aria-label="Warenkorb" title="Warenkorb">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h3l3 13h11l3-9H6"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+          </a>
+        </div>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section class="product-carousel" aria-label="Produkte entdecken" aria-roledescription="Karussell" tabindex="0">
+      <div class="carousel-stage">
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="product-track"></div>
+        </div>
+        <button class="carousel-arrow carousel-prev" type="button" aria-label="Vorherige Produkte" aria-controls="product-track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4-8 8 8 8"/></svg></button>
+        <button class="carousel-arrow carousel-next" type="button" aria-label="Nächste Produkte" aria-controls="product-track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8"/></svg></button>
+      </div>
+      <div class="carousel-controls">
+        <div class="carousel-dots" aria-label="Produktgruppen"></div>
+      </div>
+      <p class="visually-hidden carousel-status" aria-live="polite"></p>
+      <noscript><p class="text-center">Bitte aktiviere JavaScript, um das Produktkarussell zu sehen. <a href="https://www.fruityweed.de/shop/">Zum Sortiment</a></p></noscript>
+    </section>
+    <section class="banner-carousel" aria-label="Bildergalerie" aria-roledescription="Karussell" tabindex="0">
+      <div class="banner-stage" id="banner-slides"></div>
+      <button class="banner-arrow banner-prev" type="button" aria-label="Vorheriges Bild" aria-controls="banner-slides"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4-8 8 8 8"/></svg></button>
+      <button class="banner-arrow banner-next" type="button" aria-label="Nächstes Bild" aria-controls="banner-slides"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8"/></svg></button>
+      <div class="banner-dots" aria-label="Bild auswählen"></div>
+      <p class="visually-hidden banner-status" aria-live="polite"></p>
+    </section>
+    <section class="shop-information" aria-labelledby="shop-notice-heading">
+      <div class="shop-information-inner">
+        <div class="shop-notice">
+          <span class="shop-notice-label">Hinweis</span>
+          <h2 id="shop-notice-heading">ZUR ZEIT NUR ONLINEVERKAUF!</h2>
+          <p>WIR ARBEITEN SCHNELLSTMÖGLICH AN EINER LÖSUNG FÜR EUCH DEN SHOP AUCH PERSÖNLICH ZU BESUCHEN.</p>
+        </div>
+        <div class="shipping-information">
+          <p>Der Versand für Samen ist kostenlos.</p>
+          <p>Nach Absprache kann auch persönlich geliefert werden im Kreis Herzogtum-Lauenburg, Lübeck, Kreis Stormarn, Hamburg Rahlstedt.</p>
+        </div>
+      </div>
+    </section>
+    <section class="about-story" aria-labelledby="about-story-heading">
+      <div class="about-story-inner">
+        <h1 id="about-story-heading">Fruity Weed</h1>
+        <div class="about-story-intro">
+          <h2>60 Jahre Pflanzenwissen. Eine Vision.</h2>
+          <p>Was bei uns wächst, wurzelt tief.<br>In Erfahrung. In Handwerk. In Verantwortung.</p>
+          <p>Unser Familienbetrieb vereint <strong>über sechs Jahrzehnte gelebtes Pflanzenwissen:</strong><br>30 Jahre Erfahrung aus dem klassischen Zier- und Nutzpflanzenbau treffen auf fast ebenso lange Expertise im professionellen Umgang mit Cannabisgenetik. Zwei Wege, ein Fundament – die kompromisslose Liebe zur Pflanze.</p>
+        </div>
+        <div class="about-story-columns">
+          <div>
+            <h3>Erfahrung, die man nicht lernen, nur leben kann</h3>
+            <p>Unser Team besteht nicht nur aus Züchtern und Gärtnern, sondern auch aus <strong>Cannabis-Patienten</strong>, die ihre praktische Erfahrung und ihr tiefes Verständnis für <strong>Sorten, Wirkprofile und Terpene</strong> einbringen. Dieses Wissen ist kein Lehrbuchwissen – es ist gelebte Realität und fließt direkt in unsere Zuchtarbeit ein.</p>
+            <h3>Raum für Innovation: 6.000 m² Zukunft</h3>
+            <p>Auf <strong>6.000 Quadratmetern Gewächshausfläche</strong> entwickeln wir neue <strong>Sorten, Strains und Genetiken</strong>.<br>Hier entstehen nicht nur Ideen, sondern stabile, reproduzierbare Ergebnisse:</p>
+            <ul>
+              <li>eigene Züchtungen</li>
+              <li>Stecklinge und Sämlinge</li>
+              <li>selektierte, leistungsfähige Genetik</li>
+            </ul>
+            <p>Alles entsteht in <strong>qualitativer Handarbeit</strong>, mit Geduld, Sorgfalt und Respekt vor jeder einzelnen Pflanze.</p>
+          </div>
+          <div>
+            <h3>Qualität durch Transparenz</h3>
+            <p>Wir stehen für:</p>
+            <ul>
+              <li>Transparenz in Prozessen und Herkunft</li>
+              <li>konsequente Qualität statt Masse</li>
+              <li>kurze Lieferzeiten durch eigene Produktion</li>
+              <li>Erfahrung, die sich in jedem Detail zeigt</li>
+            </ul>
+            <p>Keine leeren Versprechen. Keine Schnellschüsse.<br>Nur Pflanzen, hinter denen wir zu 100 % stehen.</p>
+            <h3>Vorreiter aus Überzeugung</h3>
+            <p>Wir gehören zu den <strong>Vorreitern für tetraploides Cannabis – Made in Germany.</strong><br>Nicht, weil es ein Trend ist, sondern weil wir an stabile Genetik, kontrollierte Zucht und nachhaltige Entwicklung glauben.</p>
+            <h3>Denn Qualität ist vom Samen bis zur Blüte wichtig.</h3>
+            <p>Was bieten wir:</p>
+            <ul>
+              <li>Premium-Stecklinge aus eigener Produktion</li>
+              <li>kompetente Beratung</li>
+              <li>Service</li>
+              <li>schnelle Lieferung</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="category-carousel" aria-labelledby="category-heading" aria-roledescription="Karussell" tabindex="0">
+      <h2 id="category-heading">UNSERE PRODUKTKATEGORIEN</h2>
+      <p class="category-subtitle">Startseite</p>
+      <div class="category-navigation">
+        <button class="category-prev" type="button" aria-label="Vorherige Kategorie" aria-controls="category-track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
+        <button class="category-next" type="button" aria-label="Nächste Kategorie" aria-controls="category-track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+      </div>
+      <div class="category-viewport"><div class="category-track" id="category-track"></div></div>
+      <div class="category-dots" aria-label="Kategorie auswählen"></div>
+      <p class="visually-hidden category-status" aria-live="polite"></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-grid">
+        <div class="footer-payment-column">
+          <h2>Zahlungsarten</h2>
+          <div class="footer-payments">
+            <div class="payment-logo"><img src="assets/images/paypal.png" alt="PayPal" width="640" height="155"></div>
+            <div class="payment-logo"><img src="assets/images/bank-transfer.png" alt="Überweisung / Vorkasse" width="415" height="100"></div>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h2>Kontakt &amp; Adresse</h2>
+          <address>
+            <p><strong>Fruity Weed</strong><br><a href="tel:045346153821">045346153821</a><br><a href="mailto:info@fruityweed.de">info@fruityweed.de</a></p>
+            <p>Büro:<br>Hauptstrasse 11<br>D-23898 Lüchow</p>
+            <p>Deutschland</p>
+          </address>
+        </div>
+        <div class="footer-social">
+          <h2>Folgen Sie uns auf</h2>
+          <a class="footer-instagram" href="https://www.instagram.com/fruityweed.germanys.nr.1/" target="_blank" rel="noopener noreferrer" aria-label="Fruity Weed auf Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg></a>
+        </div>
+        <div class="footer-partner-column">
+          <h2>Partner</h2>
+          <ul class="footer-partners">
+            <li>Nirvana Genetics</li><li>Prempavee</li><li>Seeds24</li><li>Frosty Farms</li><li>VOGES Verpackungen</li>
+          </ul>
+        </div>
+        <div class="footer-help-column">
+          <h2>Hilfe</h2>
+          <ul class="footer-help">
+            <li><a href="https://www.fruityweed.de/zahlungsweisen/">Zahlungsinformationen</a></li>
+            <li><a href="https://www.fruityweed.de/gpsr/">Lieferung und Versand</a></li>
+            <li><a href="https://www.fruityweed.de/gpsr/">Bearbeitungszeiten</a></li>
+            <li><a href="https://www.fruityweed.de/gpsr/">GPSR</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>© Copyright - Fruity Weed</p>
+        <nav class="footer-legal" aria-label="Rechtliche Informationen">
+          <a href="https://www.fruityweed.de/allgemeine_geschaeftsbedingungen/">Allgemeine Geschäftsbedingungen</a>
+          <a href="https://www.fruityweed.de/zahlungsweisen/">Zahlungsweisen</a>
+          <a href="https://www.fruityweed.de/datenschutz/">Datenschutz</a>
+          <a href="https://www.fruityweed.de/widerruf/">Widerruf</a>
+          <a href="https://www.fruityweed.de/gpsr/">GPSR – Verantwortliche Person gemäß EU-Produktsicherheitsverordnung</a>
+          <a href="https://www.fruityweed.de/impressum/">Impressum</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" type="button" aria-label="Zurück nach oben" title="Zurück nach oben" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 15 7-7 7 7"/></svg></button>
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+  <script src="carousel.js"></script>
+  <script src="banner-slides.js"></script>
+  <script src="banner-carousel.js"></script>
+  <script src="category-carousel.js"></script>
+  <script src="footer.js"></script>
+</body>
+</html>

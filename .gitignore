@@ -1,0 +1,26 @@
+# Dependencies and local caches
+node_modules/
+.cache/
+
+# Temporary source inspections
+/fruityweed-inspect.html
+/shop-inspect.html
+
+# Logs and packaged archives
+*.log
+*.tar
+*.tar.gz
+*.zip
+
+# Local environment variables
+.env
+.env.*
+!.env.example
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Hosting metadata for the unused private Sites preview
+/landing-prototype/.openai/

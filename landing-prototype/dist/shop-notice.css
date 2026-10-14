@@ -1,0 +1,16 @@
+.shop-information { padding: 0 3.5% 64px; background: #fff; }
+.shop-information-inner { max-width: 1512px; margin: 0 auto; }
+.shop-notice { position: relative; background: #dff0b3; padding: 48px 32px; text-align: center; color: #52604b; }
+.shop-notice-label { position: absolute; top: 0; left: 0; padding: 14px 25px; background: #d4e5ad; font-size: 14px; }
+.shop-notice h2 { margin: 0 0 10px; font-size: 18px; line-height: 1.5; font-weight: 700; }
+.shop-notice p { margin: 0; font-size: 18px; line-height: 1.5; font-weight: 700; }
+.shipping-information { margin-top: 60px; text-align: center; color: #242424; font-size: 24px; line-height: 1.35; }
+.shipping-information p { margin: 0; }
+@media (max-width: 575px) {
+  .shop-information { padding: 0 20px 40px; }
+  .shop-notice { padding: 60px 18px 28px; }
+  .shop-notice h2, .shop-notice p { font-size: 16px; }
+  .shop-notice-label { padding: 10px 18px; font-size: 13px; }
+  .shipping-information { margin-top: 32px; font-size: 18px; line-height: 1.5; }
+  .shipping-information p + p { margin-top: 12px; }
+}

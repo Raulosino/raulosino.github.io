@@ -1,0 +1,37 @@
+.banner-carousel { position: relative; max-width: 1440px; margin: 24px auto 48px; background: #edf1e5; }
+.banner-stage { position: relative; height: clamp(320px, 55vw, 640px); overflow: hidden; }
+.banner-slide { position: absolute; inset: 0; margin: 0; opacity: 0; visibility: hidden; transition: opacity 600ms ease, visibility 0s linear 600ms; }
+.banner-slide.is-active { opacity: 1; visibility: visible; transition-delay: 0s; }
+.banner-slide img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.banner-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; width: 100%; height: 100%; padding: 24px 64px; background: #edf1e5; color: #61764d; text-align: center; }
+.banner-slide:nth-child(2) .banner-placeholder { background: #e4ebdc; }
+.banner-slide:nth-child(3) .banner-placeholder { background: #f2f1e6; }
+.banner-placeholder svg { width: 56px; height: 56px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.banner-placeholder strong { font-size: clamp(22px, 3vw, 40px); font-weight: 500; }
+.banner-placeholder span { font-size: 15px; }
+.banner-arrow { position: absolute; top: 50%; transform: translateY(-50%); display: grid; place-items: center; width: 48px; height: 64px; padding: 0; border: 0; border-radius: 4px; background: #214e3980; color: #fff; }
+.banner-arrow:hover { background: #214e39b3; }
+.banner-arrow svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 2.5; }
+.banner-prev { left: 20px; }
+.banner-next { right: 20px; }
+.banner-dots { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; }
+.banner-dots button { display: grid; place-items: center; width: 32px; height: 44px; border: 0; background: transparent; }
+.banner-dots button::after { content: ''; width: 10px; height: 10px; border-radius: 50%; background: #214e394d; }
+.banner-dots button.is-active::after { background: #214e39; width: 13px; height: 13px; }
+.banner-carousel :focus-visible { outline: 3px solid #214e39; outline-offset: 3px; }
+@media (min-width: 576px) and (max-width: 1480px) {
+  .banner-carousel { margin-left: 3.5%; margin-right: 3.5%; }
+}
+@media (max-width: 575px) {
+  .banner-carousel { margin: 16px 20px 32px; }
+  .banner-stage { height: auto; aspect-ratio: 3 / 4; }
+  .banner-prev { left: 8px; }
+  .banner-next { right: 8px; }
+  .banner-arrow { width: 40px; height: 52px; }
+  .banner-dots { bottom: 4px; }
+  .banner-placeholder svg { width: 40px; height: 40px; }
+  .banner-placeholder span { font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .banner-slide { transition: none; }
+}

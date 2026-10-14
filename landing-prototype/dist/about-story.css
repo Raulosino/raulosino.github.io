@@ -1,0 +1,40 @@
+.about-story {
+  padding: 72px 3.5% 80px;
+  color: #20351b;
+  background-color: var(--header-green);
+  background-image: linear-gradient(rgba(166, 212, 25, .80), rgba(166, 212, 25, .84)), url('assets/images/carouselImage.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-story-inner { max-width: 1200px; margin: 0 auto; padding: 48px; border: 1px solid #ffffff66; border-radius: 20px; background: #ffffff18; box-shadow: 0 16px 48px #39550018, inset 0 1px 0 #ffffff55; }
+.about-story h1 { margin: 0 0 24px; text-align: center; font-size: clamp(40px, 4vw, 56px); letter-spacing: -.03em; font-weight: 700; }
+.about-story h1::after { content: ''; display: block; width: 56px; height: 4px; margin: 20px auto 0; border-radius: 4px; background: #20351b88; }
+.about-story-intro { max-width: 880px; margin: 0 auto 40px; padding-bottom: 24px; border-bottom: 1px solid #20351b26; text-align: center; }
+.about-story h2 { margin: 0 0 24px; font-size: clamp(23px, 2.5vw, 30px); font-weight: 700; }
+.about-story p, .about-story li { font-size: 18px; line-height: 1.75; }
+.about-story p { margin: 0 0 24px; }
+.about-story strong { font-weight: 700; }
+.about-story-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; }
+.about-story-columns > div + div { padding-left: 32px; border-left: 1px solid #20351b26; }
+.about-story h3 { margin: 32px 0 16px; font-size: 22px; line-height: 1.4; font-weight: 700; }
+.about-story h3::before { content: ''; display: block; width: 28px; height: 3px; margin-bottom: 14px; border-radius: 3px; background: #20351b77; }
+.about-story-columns > div > h3:first-child { margin-top: 0; }
+.about-story ul { margin: 0 0 24px; padding: 16px 20px 16px 36px; border: 1px solid #ffffff55; border-radius: 10px; background: #ffffff26; }
+.about-story li { padding-left: 4px; }
+.about-story li::marker { color: #365529; }
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-story-inner { padding: 32px; }
+  .about-story-columns { gap: 24px; }
+  .about-story-columns > div + div { padding-left: 24px; }
+}
+@media (max-width: 767px) {
+  .about-story { padding: 32px 16px; }
+  .about-story-inner { padding: 28px 20px; border-radius: 14px; }
+  .about-story h1 { margin-bottom: 24px; }
+  .about-story-intro { margin-bottom: 32px; }
+  .about-story-columns { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .about-story-columns > div + div { padding-left: 0; padding-top: 24px; border-left: 0; border-top: 1px solid #20351b26; }
+  .about-story p, .about-story li { font-size: 16px; line-height: 1.7; }
+  .about-story h3 { font-size: 20px; }
+}

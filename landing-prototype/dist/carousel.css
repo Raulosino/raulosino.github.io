@@ -1,0 +1,63 @@
+.product-carousel { padding: 34px 3.5% 24px; background: #fff; }
+.carousel-stage { position: relative; }
+.carousel-viewport { --visible-products: 4; overflow: hidden; }
+.carousel-track { display: flex; gap: 48px; transition: transform 550ms ease; }
+.product-card { flex: 0 0 calc((100% - 144px) / 4); min-width: 0; }
+.product-image-panel { position: relative; aspect-ratio: 1; overflow: hidden; background: #e8ecd9; }
+.product-image-link { display: block; width: 100%; height: 100%; }
+.product-image-link img { width: 100%; height: 100%; object-fit: cover; }
+.product-overlay { position: absolute; inset: auto 0 0; background: #ffffffe0; }
+.product-description { padding: 14px 16px 10px; padding-right: 64px; }
+.product-description h2 { margin: 0 0 6px; font-size: 18px; line-height: 1.25; font-weight: 400; }
+.product-description h2 a { color: #26362d; text-decoration: none; }
+.product-description h2 a:hover { text-decoration: underline; }
+.product-price { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 8px; font-size: 17px; }
+.product-price del { color: #777; }
+.product-price strong { color: #71952e; }
+.product-tax { margin: 0; font-size: 13px; color: #62685d; }
+.product-actions { display: flex; border-top: 1px solid #ffffffaa; }
+.product-actions a { flex: 1; padding: 13px 4px; text-align: center; color: #525947; font-size: 12px; font-weight: 600; text-decoration: none; }
+.product-actions a + a { border-left: 1px solid #ffffffaa; }
+.product-actions a:hover { background: #ffffffa0; color: #214e39; }
+.product-sale { position: absolute; right: 0; bottom: 104px; display: grid; place-items: center; width: 60px; height: 48px; border-radius: 24px 0 0 24px; color: #fff; background: #71952e; font-size: 12px; font-weight: 700; }
+.wishlist-button { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 52px; margin-top: 18px; padding: 12px 8px; border: 0; color: #fff; background: #71952e; font-size: 16px; }
+.wishlist-button:hover { background: #5d7c24; }
+.wishlist-button svg { width: 20px; height: 20px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 2; }
+.wishlist-button[aria-pressed='true'] svg { fill: currentColor; }
+.carousel-arrow { position: absolute; top: calc((100% - 70px) / 2); transform: translateY(-50%); display: grid; place-items: center; width: 48px; height: 64px; padding: 0; border: 0; border-radius: 3px; color: #fff; background: #26362d66; }
+.carousel-arrow:hover { background: #26362daa; }
+.carousel-arrow svg { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 2.5; }
+.carousel-prev { left: -18px; }
+.carousel-next { right: -18px; }
+.carousel-controls { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 18px; }
+.carousel-dots { display: flex; flex-wrap: wrap; justify-content: center; }
+.carousel-dots button { display: grid; place-items: center; width: 28px; height: 44px; padding: 0; border: 0; background: transparent; }
+.carousel-dots button::after { content: ''; width: 10px; height: 10px; border-radius: 50%; background: #c3c6bf; }
+.carousel-dots button.is-active::after { width: 13px; height: 13px; background: #62665c; }
+.product-carousel :focus-visible { outline: 3px solid #214e39; outline-offset: -3px; }
+@media (min-width: 1200px) and (max-width: 1450px) {
+  .carousel-track { gap: 28px; }
+  .product-card { flex-basis: calc((100% - 84px) / 4); }
+  .wishlist-button { font-size: 14px; }
+  .product-description { padding-left: 12px; }
+  .product-description h2 { font-size: 16px; }
+}
+@media (min-width: 576px) and (max-width: 1199px) {
+  .carousel-viewport { --visible-products: 2; }
+  .carousel-track { gap: 24px; }
+  .product-card { flex-basis: calc((100% - 24px) / 2); }
+}
+@media (max-width: 575px) {
+  .product-carousel { padding: 24px 20px 16px; }
+  .carousel-viewport { --visible-products: 1; }
+  .carousel-track { gap: 20px; }
+  .product-card { flex-basis: 100%; }
+  .carousel-arrow { width: 40px; height: 56px; }
+  .carousel-prev { left: -10px; }
+  .carousel-next { right: -10px; }
+  .carousel-controls { gap: 4px; }
+  .carousel-dots button { width: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track { transition: none; }
+}
